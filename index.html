@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Combined Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#todo">To-Do List</a>
+    <a href="#products">Product List</a>
+  </nav>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h1>John Doe</h1>
+    <p>Frontend Developer | JavaScript Enthusiast</p>
+
+    <h2>About Me</h2>
+    <p>I build modern, responsive web applications using HTML, CSS, and JavaScript.</p>
+
+    <h2>Projects</h2>
+    <ul>
+      <li>To-Do List with Local Storage</li>
+      <li>Product Listing Page with Filtering</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: john@example.com</p>
+  </section>
+
+  <!-- To-Do List Section -->
+  <section id="todo">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Product List Section -->
+  <section id="products">
+    <h2>Product Listing</h2>
+    <div class="controls">
+      <select id="category" onchange="filterAndSort()">
+        <option value="all">All Categories</option>
+        <option value="clothing">Clothing</option>
+        <option value="electronics">Electronics</option>
+      </select>
+
+      <select id="sort" onchange="filterAndSort()">
+        <option value="default">Sort</option>
+        <option value="price-asc">Price ↑</option>
+        <option value="price-desc">Price ↓</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+    <div id="productList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
